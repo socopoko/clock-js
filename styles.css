@@ -1,0 +1,58 @@
+html {
+    background:black;
+    background-size: cover;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.analog-clock {
+    width: 30rem;
+    height: 30rem;
+    border: 10px solid white;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); /* account for the height of the clock hands */
+}
+
+.hand {
+    width: 50%;
+    height: 6px;
+    background: whitesmoke;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%; /* moves origin/anchor to right end */
+    transform: rotate(90deg);
+    transition: all 0.05s; 
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1); /* using bezier in insepect element */
+}
+
+.digital-clock {
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+    padding-top: 100px;
+    max-width: 15%;
+    
+}
+.unit {
+    color: white;
+    
+    font-size: 3em;
+    margin: 0px auto;
+    /* position: relative; */
+    
+}
